@@ -1,11 +1,16 @@
+const fs = require('fs');
 const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
-console.log(`
-    Current directory: ${__dirname},
-    Node ENV: ${process.env.NODE_ENV},
-    Now Date: ${new Date()}
-`);
+if (process.env.NODE_ENV === 'production') {
+    fs.appendFileSync('logs/build.log', `
+        Nodejs Process version: ${process.version}
+        Current directory: ${__dirname}
+        Node ENV: ${process.env.NODE_ENV}
+        Build excute at: ${new Date()}
+    `)
+}
 
 module.exports = {
     mode: process.env.NODE_ENV === "development" ? "development" : "production",
@@ -40,6 +45,6 @@ module.exports = {
     //     "$": "jQuery"
     // },
     plugins: [
-        new HtmlWebpackPlugin({ cache: true, filename: 'index.html', template: 'public/index.html' })
+        new HtmlWebpackPlugin({ template: 'public/index.html', filename: 'index.html', cache: true })
     ]
 };
