@@ -1,14 +1,15 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Hello } from './components/Hello';
+import Hello from 'components/Hello';
+import Test from './components/Test.js';
+import test from './test';
+console.log(test);
 
 // const unused = function (ads){
 //     var r = "nope"
 //  }
 
-type ArrowFnc = any;
-
-const arrow_fnc: ArrowFnc = (abc: any) => abc.splice(0, 1);
+const arrow_fnc = (abc) => abc.splice(0, 1);
 
 console.log(arrow_fnc);
 
