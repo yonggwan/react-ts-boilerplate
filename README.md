@@ -1,6 +1,9 @@
 <!-- 
     Webpack configuration referrence.
     https://typescript-kr.github.io/pages/tutorials/react-&-webpack.html
+
+    eslint + prettier configuration referrence.
+    https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project
  -->
 [![node][node]][node-url] [![npm][npm]][npm-url] [![typescript][typescript]][typescript-url] [![react][react]][react-url]
 
@@ -16,7 +19,7 @@
 ## What's includeds?
 - webpack dev server with [HMR][hmr-url]
 - build optimization(to be)
--
+- eslint + prettier
 
 ### VScode custom setting
 [`.vscode/settings.json`](.vscode/settings.json)
