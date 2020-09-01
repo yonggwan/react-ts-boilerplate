@@ -18,8 +18,10 @@
 
 ## What's includeds?
 - webpack dev server with [HMR][hmr-url]
-- build optimization(to be)
-- eslint + prettier
+- eslint + prettier (auto formatting)
+- vscode setting file (theme, etc configs)
+- build optimization (next job)
+  chunk/tree-shake/minify
 
 ### VScode custom setting
 [`.vscode/settings.json`](.vscode/settings.json)
