@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Hello } from '@/components/Hello';
+import { Hello } from '@/components/Paragraph';
 
 const _radsr = require('asdads');
 
