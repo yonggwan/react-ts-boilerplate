@@ -45,6 +45,7 @@
     }
 }
 ```
+
 ### My VScode extensions
 ![My VScode extensions](docs/extensions_capture.png)
 
