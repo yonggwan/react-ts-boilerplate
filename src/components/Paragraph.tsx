@@ -5,7 +5,7 @@ export interface Props {
   content?: string;
 }
 
-export const Paragraph = (props: Props) => {
+export const Paragraph = (props: Props): JSX.Element => {
   return (
     <p>
       Paragraph. <br /> Title: {props.title} and content: {props.content}!

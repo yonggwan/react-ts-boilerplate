@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Paragraph } from '@/components/Paragraph';
-import Home from '@/containers/Home';
+import Home from '@/containers/home';
 // import About from '@/containers/About';
 
 const App = (): JSX.Element => {
