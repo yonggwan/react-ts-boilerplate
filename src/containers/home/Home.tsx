@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './style.css';
 
-const Home = () => {
+const Home = (): JSX.Element => {
   return (
     <div>
       <a href="#">HOME</a>
