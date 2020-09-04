@@ -13,17 +13,14 @@
     "jsx": "react",
     "allowJs": true,
     "sourceMap": true,
-    // tsc를 사용해 .js 파일이 아닌 .d.ts 파일이 생성되었는지 확인합니다.
-    "declaration": true, // .d.ts 파일의 생성 여부
-    "declarationDir": "./dist", // .d.ts 파일이 생성되는 디렉토리 설정
-    // "emitDeclarationOnly": true,
-    // Babel이 TypeScript 프로젝트의 파일을 안전하게 트랜스파일할 수 있는지 확인합니다.
+    "typeRoots": ["./types", "node_modules/@types"],
     "isolatedModules": true,
-    "locale": "ko", // 에러메세지 출력 언어 설정
-    "pretty": true, // 에러 메시지를 예쁘게 설정
+    "locale": "ko",
+    "pretty": true,
+    "strictNullChecks": true,
     "allowUnreachableCode": false,
-    "noUnusedLocals": false, // 사용안된 지역변수에 대한 오류 보고 여부
-    "noUnusedParameters": false // 사용안된 파라미터에 대한 오류 보고 여부
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
   },
   "exclude": ["node_modules"]
 }

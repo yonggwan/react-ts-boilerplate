@@ -1,7 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
+
+const now = Date.now();
 
 if (process.env.NODE_ENV === 'production') {
   fs.appendFileSync(
@@ -21,7 +24,7 @@ module.exports = {
   devtool: 'source-map',
   entry: path.resolve(__dirname, 'src/index'),
   output: {
-    filename: 'bundle.js',
+    filename: 'bundle-[name]-[hash].js',
     path: path.resolve(__dirname, 'dist'),
   },
   resolve: {
@@ -41,7 +44,17 @@ module.exports = {
         test: /\.css/i,
         use: ['style-loader', 'css-loader'],
       },
-      // 모든 '.js' 출력 파일은 'source-map-loader'에서 다시 처리한 소스 맵이 있습니다.
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[contenthash].[ext]',
+            },
+          },
+        ],
+      },
       {
         enforce: 'pre',
         test: /\.js(x?)$/,
@@ -50,18 +63,23 @@ module.exports = {
     ],
   },
   devServer: {
+    writeToDisk: true,
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
-    port: 8080,
+    port: process.env.port || 3000,
     open: true,
     hot: true,
   },
-  // 경로가 다음 중 하나와 일치하는 모듈을 가져올 때, 해당 전역 변수가 있다고 가정하고 사용합니다.
-  // 브라우저가 빌드간에 라이브러리를 캐시 할 수 있도록 모든 의존성을 묶지 않아도 되기 때문에 중요합니다.
-  // externals: {
-  //     "$": "jQuery"
-  // },
   plugins: [
+    new webpack.ProgressPlugin({
+      handler: function (percentage, msg, ...args) {
+        fs.appendFileSync(
+          `logs/build.${now}.log`,
+          `[${percentage * 100}%]\n${msg}\n\n`
+        );
+      },
+    }),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: 'public/index.html',
       filename: 'index.html',
