@@ -37,7 +37,7 @@ module.exports = {
     rules: [
       {
         test: /\.ts(x?)$/,
-        use: ['ts-loader', 'babel-loader?cacheDirectory'],
+        use: ['ts-loader' /*,'babel-loader?cacheDirectory'*/],
         exclude: /node_modules/,
       },
       {
