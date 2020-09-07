@@ -24,7 +24,7 @@ module.exports = {
   devtool: 'source-map',
   entry: path.resolve(__dirname, 'src/index'),
   output: {
-    filename: 'bundle-[name]-[hash].js',
+    filename: 'bundle-[name].js',
     path: path.resolve(__dirname, 'dist'),
   },
   resolve: {
@@ -71,6 +71,7 @@ module.exports = {
     hot: true,
   },
   plugins: [
+    /**
     new webpack.ProgressPlugin({
       handler: function (percentage, msg, ...args) {
         fs.appendFileSync(
@@ -79,6 +80,7 @@ module.exports = {
         );
       },
     }),
+     */
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: 'public/index.html',
