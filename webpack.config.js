@@ -2,7 +2,6 @@ const fs = require('fs');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const webpack = require('webpack');
 
 const now = Date.now();
 
@@ -67,7 +66,7 @@ module.exports = {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: process.env.port || 3000,
-    open: true,
+    open: false,
     hot: true,
   },
   plugins: [

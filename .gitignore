@@ -1,9 +1,12 @@
 ###############################################
               Self configurations
 ###############################################
+# IDE
 .vscode
 
-
+# Debug
+webpack-profile-report.html
+webpack-profile-stats.json
 
 
 
