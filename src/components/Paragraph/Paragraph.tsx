@@ -9,7 +9,7 @@ export interface Props {
 
 export const Paragraph = (props: Props): JSX.Element => {
   const classes = useStyles({
-    active: props.primary,
+    active: !!props.primary,
   });
   return (
     <p className={classes.paragraph}>
