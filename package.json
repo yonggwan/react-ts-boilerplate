@@ -6,7 +6,8 @@
   "scripts": {
     "clean": "rm -rf ./dist/**",
     "dev": "cross-env NODE_ENV=development webpack-dev-server",
-    "build": "cross-env NODE_ENV=development ./node_modules/.bin/webpack --progress",
+    "build:dev": "cross-env NODE_ENV=development ./node_modules/.bin/webpack --progress",
+    "build:prod": "cross-env NODE_ENV=production ./node_modules/.bin/webpack --progress",
     "_babel_": "./node_modules/.bin/babel --out-file bundle.js src/index.tsx",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --debug \"src/**/*.{js,jsx,ts,tsx}\"",
