@@ -14,10 +14,12 @@
 
 ## Main stack
 
-- react.js (i :heart: it)
-- typescript (i :heart: it to)
-- material-ui (optional, not yet)
-
+<ol>
+  <li>react.js</li>
+  <li>typescript</li>
+  <li>css-in-js (jss)</li>
+  <li>material-ui</li>
+</ol>
 ## What's includeds?
 
 - webpack dev server with [HMR][hmr-url]
