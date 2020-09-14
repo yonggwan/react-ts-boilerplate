@@ -4,11 +4,12 @@ import Home from '@/containers/home';
 import About from '@/containers/about';
 import RyanImage from '@/images/ryan.png';
 import { Button } from '@material-ui/core';
+import DefaultLayout from '@/components/layouts/default/Default';
 
 const App = (): JSX.Element => {
   const [active, setActive] = React.useState(false);
   return (
-    <div>
+    <DefaultLayout>
       <h1>Hello world! {About}</h1>
       <Button onClick={(ev) => setActive(!active)} color="primary">
         Hello!
@@ -20,7 +21,7 @@ const App = (): JSX.Element => {
         primary={active}
       />
       <Home />
-    </div>
+    </DefaultLayout>
   );
 };
 

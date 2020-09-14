@@ -7,7 +7,7 @@ export interface Props {
   primary?: boolean;
 }
 
-export const Paragraph = (props: Props): JSX.Element => {
+export const Paragraph = (props: Props) => {
   const classes = useStyles({
     active: !!props.primary,
   });

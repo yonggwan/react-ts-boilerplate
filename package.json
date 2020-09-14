@@ -10,7 +10,7 @@
     "_babel_": "./node_modules/.bin/babel --out-file bundle.js src/index.tsx",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --debug \"src/**/*.{js,jsx,ts,tsx}\"",
-    "analyze": "webpack --profile --json > ./webpack-profile-stats.json && webpack-bundle-analyzer --mode=static --report=webpack-profile-report.html ./webpack-profile-stats.json"
+    "analyze": "webpack --profile --json > ./docs/webpack-profile-stats.json && webpack-bundle-analyzer --mode=static --report=./docs/webpack-profile-report.html ./docs/webpack-profile-stats.json"
   },
   "repository": {
     "type": "git",
@@ -48,6 +48,7 @@
     "html-loader": "^1.3.0",
     "html-webpack-plugin": "^4.4.1",
     "prettier": "^2.1.1",
+    "react-jss": "^10.4.0",
     "source-map-loader": "^1.1.0",
     "style-loader": "^1.2.1",
     "ts-loader": "^8.0.3",

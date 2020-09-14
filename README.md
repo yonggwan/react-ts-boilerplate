@@ -29,6 +29,7 @@
 ### VScode custom setting
 
 [.vscode/settings.json](./docs/vscode_settings.json.md)
+VSCode Theme: `One Dark Pro`
 
 ### My VScode extensions
 
