@@ -21,7 +21,7 @@ module.exports = {
   mode: process.env.NODE_ENV === 'development' ? 'development' : 'production',
   // Webpack의 출력물에서 디버깅을 하기위해 소스 맵을 허용합니다.
   devtool: 'source-map',
-  entry: path.resolve(__dirname, 'src/index'),
+  entry: path.resolve(__dirname, 'src'),
   output: {
     filename: 'bundle-[name].js',
     path: path.resolve(__dirname, 'dist'),

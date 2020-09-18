@@ -20,6 +20,22 @@
   <li>css-in-js (jss)</li>
   <li>material-ui</li>
 </ol>
+
+## run project
+
+```sh
+npm install & npm run dev
+```
+
+then open `http://localhost:3000/`
+
+## build
+
+```sh
+npm run build:dev
+npm run build:prod
+```
+
 ## What's includeds?
 
 - webpack dev server with [HMR][hmr-url]
