@@ -8,28 +8,29 @@
 
 [![node][node]][node-url] [![npm][npm]][npm-url] [![typescript][typescript]][typescript-url] [![react][react]][react-url]
 
-# A simple boilerplate for frontend
+# React typescript boilerplate
+Typescript based quick start template for new react project
 
 - Self configuration A-Z
 
-## Main stack
+## Dependencies
 
 <ol>
   <li>react.js</li>
   <li>typescript</li>
   <li>css-in-js (jss)</li>
-  <li>material-ui</li>
+  <li>~~material-ui~~ (제거하기)</li>
 </ol>
 
-## run project
+## install & start
 
 ```sh
-npm install & npm run dev
+npm install && npm run dev
 ```
 
 then open `http://localhost:3000/`
 
-## build
+## Build scripts
 
 ```sh
 npm run build:dev
