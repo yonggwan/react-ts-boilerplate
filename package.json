@@ -1,5 +1,5 @@
 {
-  "name": "react-ts",
+  "name": "react-ts-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://yonggwan:tmanfspt21@github.com/yonggwan/react-ts.git"
+    "url": "git+https://yonggwan:tmanfspt21@github.com/yonggwan/react-ts-boilerplate.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yonggwan/react-ts/issues"
+    "url": "https://github.com/yonggwan/react-ts-boilerplate/issues"
   },
-  "homepage": "https://github.com/yonggwan/react-ts#readme",
+  "homepage": "https://github.com/yonggwan/react-ts-boilerplate#readme",
   "dependencies": {
     "cross-env": "^7.0.2",
     "react": "^16.13.1",
