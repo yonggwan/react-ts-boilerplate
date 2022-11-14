@@ -60,6 +60,6 @@ VSCode Theme: `One Dark Pro`
 [npm-url]: https://npmjs.com/package/npm
 [typescript]: https://img.shields.io/badge/typescript-^4.0.2-blue
 [typescript-url]: https://www.npmjs.com/package/typescript
-[react]: https://img.shields.io/badge/react-^16.13.1-blue
+[react]: https://img.shields.io/badge/react-^18.20.0-blue
 [react-url]: https://www.npmjs.com/package/react
 [hmr-url]: https://webpack.js.org/concepts/hot-module-replacement
