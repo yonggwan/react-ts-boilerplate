@@ -11,7 +11,7 @@
 # React typescript boilerplate
 Typescript based quick start template for new react project
 
-- Self configuration A-Z
+- This will help my fast prototyping
 
 ## Dependencies
 
@@ -32,9 +32,9 @@ then open `http://localhost:3000/`
 
 ## Build scripts
 
-```sh
-npm run build:dev
-npm run build:prod
+```bash
+yarn run build:dev
+yarn run build:prod
 ```
 
 ## What's includeds?
@@ -42,7 +42,7 @@ npm run build:prod
 - webpack dev server with [HMR][hmr-url]
 - eslint + prettier (auto formatting)
 - vscode setting file (theme, etc configs)
-- build optimization (next job)
+- build optimization (next feature)
   chunk/tree-shake/minify
 
 ### VScode custom setting
