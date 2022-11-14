@@ -6,7 +6,7 @@
     https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project
  -->
 
-[![node][node]][node-url] [![npm][npm]][npm-url] [![typescript][typescript]][typescript-url] [![react][react]][react-url]
+[![typescript][typescript]][typescript-url] [![react][react]][react-url]
 
 # React typescript boilerplate
 Typescript based quick start template for new react project
@@ -19,7 +19,7 @@ Typescript based quick start template for new react project
   <li>react.js</li>
   <li>typescript</li>
   <li>css-in-js (jss)</li>
-  <li>~~material-ui~~ (제거하기)</li>
+  <li>material-ui</li>
 </ol>
 
 ## install & start
