@@ -25,7 +25,7 @@ Typescript based quick start template for new react project
 ## install & start
 
 ```sh
-npm install && npm run dev
+yarn && yarn start
 ```
 
 then open `http://localhost:3000/`
